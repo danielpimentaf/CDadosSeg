@@ -9,7 +9,7 @@ Para os testes eu escolhi as seguintes apks:
 ## Food & Drink
 4. Starbucks 6.4 (Android 6.0+)
 5. 7-Eleven, Inc. 3.7.7.1 (nodpi) (Android 5.0+)
-6.BURGER KING® 6.8.6 (Android 4.4+)
+6. BURGER KING® 6.8.6 (Android 4.4+)
 ## Music & Audio
 7. Anchor - Make your own podcast 3.60.0 (nodpi)
 8. AmpMe - Speaker Booster 9.0.7 (nodpi) (Android 5.1+)
