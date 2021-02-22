@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.sei.android" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <permission android:name="com.sei.android.permission.MAP_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.sei.android.permission.MAP_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_7rp_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.sei.android.controllers.application.Application" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_android_map_api_key"/>
+        <meta-data android:name="com.zappar.embed.API_KEY" android:requestLegacyExternalStorage="true" android:value="vJvEx/gG1LfPr1c6Ouuy0qy4GQE="/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="fontProviderRequests" android:value="Noto Color Emoji Compat"/>
+        <meta-data android:name="com.mixpanel.android.MPConfig.MinimumSessionDuration" android:value="60000"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.DynamicOverlayActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.AddPhoneNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.AddMcoPhoneNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.AddFuelPhoneNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.AccountSuspendedActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.HowItWorksActivity" android:screenOrientation="portrait" android:theme="@style/HowItWorksActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.SignInActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.SignUpActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.ResetPasswordActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.PolicyActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.DashboardActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.PostFacebookLoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sei.android.controllers.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dl" android:pathPrefix="/home/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/rewards-catalog/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/browse-rewards/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/promotions/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/coupons/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/my-rewards/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/my-account/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/store-finder/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/age-verify/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/favorite-stores/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/bonus-offers/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/ar-scene/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/verification/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/scan-pay-tutorial" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/scan-pay" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/settings/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/sevennow" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/punch_card/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/ca-age-verify/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/deals/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/deals/categories/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/ca-age-verify/" android:scheme="sei"/>
+                <data android:host="dl" android:path="/mobile-fuel-pay/" android:scheme="sei"/>
+                <data android:host="dl" android:path="/locate-mobile-fuel-pay/" android:scheme="sei"/>
+                <data android:host="dl" android:path="/onboard-mobile-fuel-pay/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/profile/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/paypal-rebate-verify/" android:scheme="sei"/>
+                <data android:host="dl" android:path="/refer-a-friend" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/how-it-works" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/faq/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/verify-phone-number/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/scan-pay-tutorial-menu/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/setup-payment/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/sevennow" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/settings/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/scan-pay" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/scan-pay-tutorial" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/punch_card/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/ca-age-verify/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/points-streak/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/otp" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/mobile-fuel-hub-tabbar-page/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/mobile-fuel-hub/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/wallet/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/launch-digital-wallet" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/digital-wallet/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/scan-pay-start-scanning/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/account-verification/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/security/" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/combine-accounts" android:scheme="sei"/>
+                <data android:host="dl" android:pathPrefix="/preferences/" android:scheme="sei"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/home/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/home/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/rewards-catalog/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/rewards-catalog/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/browse-rewards/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/browse-rewards/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/promotions/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/promotions/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/coupons/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/coupons/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/my-rewards/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/my-rewards/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/my-account/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/my-account/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/store-finder/" android:scheme="https"/>
+                <data android:host="7-eleven.com" android:pathPrefix="/dl/store-finder/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/store-finder/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/age-verify/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/age-verify/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/favorite-stores/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/favorite-stores/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/bonus-offers/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/bonus-offers/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/ar-scene/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/ar-scene/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/verification/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/verification/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/scan-pay-tutorial" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/scan-pay-tutorial" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/scan-pay" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/scan-pay" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/settings/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/settings/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/sevennow" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/sevennow" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/punch_card/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/punch_card/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/ca-age-verify/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/ca-age-verify/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/deals/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/deals/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/deals/categories/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/deals/categories/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/ca-age-verify/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/ca-age-verify/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:path="/dl/mobile-fuel-pay/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:path="/dl/locate-mobile-fuel-pay/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:path="/dl/onboard-mobile-fuel-pay/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/profile/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/profile/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:path="/dl/refer-a-friend" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:path="/refer-a-friend" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:path="/dl/how-it-works" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:path="/how-it-works" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/paypal-rebate-verify/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/paypal-rebate-verify/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/mobile-fuel-hub-tabbar-page/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/mobile-fuel-hub-tabbar-page/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/mobile-fuel-hub/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/mobile-fuel-hub/" android:scheme="https"/>
+                <data android:host="7-eleven.com" android:pathPrefix="/preferences/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/preferences/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/setup-payment/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/setup-payment/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/verify-phone-number/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/verify-phone-number/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/faq/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/faq/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/scan-pay-tutorial-menu/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/scan-pay-tutorial-menu/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/security/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/security/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/points-streak/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/points-streak/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/wallet/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/wallet/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/launch-digital-wallet" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/scan-pay-start-scanning/" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/scan-pay-start-scanning/" android:scheme="https"/>
+                <data android:host="www.7-eleven.com" android:pathPrefix="/dl/combine-accounts" android:scheme="https"/>
+                <data android:host="7-eleven.ca" android:pathPrefix="/dl/combine-accounts" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/barcode_label" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.CustomBarCodeScanActivity" android:screenOrientation="portrait" android:theme="@style/AppCompactTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/re_accept_legal_terms_label" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.ReacceptLegalTermsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/PreferencesTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.PreferencesActivity" android:screenOrientation="portrait" android:theme="@style/PreferencesTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.AddCardActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.StoreListActivity" android:screenOrientation="portrait" android:theme="@style/MyStoresTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.ForceUpgradeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/store_locator" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.StoreLocatorActivity" android:screenOrientation="portrait" android:theme="@style/StoreFinderTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:label="@string/store_detail" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.StoreDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.AgeVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/register" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.FacebookMergeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.FuelRewardsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.sei.android.controllers.activity.FuelQRCodeScannerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.sei.android.views.activity.MSPWhereCanITryActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.MSPStoreSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sei.android.views.activity.MspLocationFallbackIntermediateActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_status_bar"/>
+        <meta-data android:name="com.sei.android.modules.MemoryCacheGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.CanadaAgeVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="screenLayout|screenSize" android:hardwareAccelerated="true" android:name="com.jumio.nv.NetverifyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Netverify"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.FullViewWebActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.FeatureNotAvailableActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.ReferAFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.SelfHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.sei.android.controllers.activity.SecurityActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.sei.android.controllers.activity.PasscodeVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.RebateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.HowItWorksMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.FuelRewardsHowItWorksActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.GenericBackActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.OTPVerificationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.CombineAccountsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.sei.android.controllers.activity.FuelSavingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sei.android.views.activity.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.PreferenceStyle"/>
+        <receiver android:exported="true" android:name="com.kochava.base.ReferralReceiver" android:priority="999">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.sei.android.services.FCMListenerIntentService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sei.android.services.FCMIDListenerIntentService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sei.android.services.FCMRegistrationIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.sei.android.services.DynamicOverlayIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.ReceiptActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.ShowAndGoReceiptActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.onboarding.IntroductionActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.CombineAccountSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.ShoppingCartActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.OrderHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.CheckOutActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.CallUsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.ui.NoInternetConnectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.seven.eleven.selfcheckout.payment.ui.PaymentMethodsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.seven.eleven.selfcheckout.payment.ui.AddCreditCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <service android:exported="false" android:name="com.seven.eleven.selfcheckout.service.OrderService" android:stopWithTask="true"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <activity android:name="com.seven.eleven.selfcheckout.ui.TypeInBarcodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.seven.eleven.selfcheckout.ui.FaqActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.seven.eleven.selfcheckout.payment.ui.NewAddPaymentCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.seven.eleven.selfcheckout.payment.ui.OBCardAddedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.stripe.android.view.AddSourceActivity" android:theme="@style/StripeDefaultTheme" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.stripe.android.view.PaymentMethodsActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.stripe.android.view.PaymentFlowActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.salesforce.marketingcloud.messages.iam.IamModalActivity" android:theme="@style/McSdk.Modal"/>
+        <activity android:name="com.salesforce.marketingcloud.messages.iam.IamBannerActivity" android:theme="@style/McSdk.Banner"/>
+        <activity android:name="com.salesforce.marketingcloud.messages.iam.IamFullscreenActivity" android:theme="@style/McSdk.Fullscreen"/>
+        <receiver android:exported="false" android:name="com.salesforce.marketingcloud.location.LocationReceiver"/>
+        <service android:exported="false" android:name="com.salesforce.marketingcloud.MCService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.salesforce.marketingcloud.NotificationOpenedService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.salesforce.marketingcloud.MCReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.sei.android.com.salesforce.marketingcloud.WAKE_FOR_ALARM"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.salesforce.marketingcloud.messages.push.MCFirebaseMessagingService">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.sei.android.com.salesforce.marketingcloud.initprovider" android:enabled="true" android:exported="false" android:name="com.salesforce.marketingcloud.MCInitContentProvider"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:authorities="com.sei.android.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true"/>
+        <activity android:enabled="false" android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"/>
+        <service android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:name="com.extrareality.AndroidSceneGraph.SceneGraphActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.extrareality.AndroidSceneGraph.HowToUseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="com.extrareality.SnapshotShareActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="com.extrareality.GifShareActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.extrareality.VideoDisplay" android:screenOrientation="landscape"/>
+        <activity android:configChanges="orientation" android:name="com.extrareality.SaveToDevice" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="com.extrareality.history.HistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:name="com.extrareality.PermissionsActivity"/>
+        <provider android:authorities="com.sei.android.erprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.extrareality.fileprovider.FileProviderEmbed">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="191106000"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.google.ar.core.InstallActivity" android:theme="@android:style/Theme.Material.Light.Dialog.Alert"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.sei.android.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.testfairy.activities.ProvideFeedbackActivity" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name="com.seven.eleven.sevenwallet.ui.activity.WalletTutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeWallet" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.seven.eleven.sevenwallet.ui.activity.LoadCashTutorialActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeWallet" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.seven.eleven.sevenwallet.ui.activity.SdwAddCreditCardActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeWallet"/>
+        <activity android:name="com.seven.eleven.sevenwallet.ui.activity.ManageWalletActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeWallet" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.seven.eleven.sevenwallet.ui.activity.SelectFundingActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeWallet" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.seven.eleven.sevenwallet.ui.activity.HistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeWallet" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.seven.eleven.sevenwallet.ui.activity.AddGiftCardActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeWallet" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/barcode_label" android:launchMode="singleTop" android:name="com.seven.eleven.sevenwallet.ui.activity.CustomBarCodeScanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.sei.android.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>
