@@ -1,12 +1,12 @@
 # Exploração de Dados
 
-- Que tipos de dados você tem, majoritariamente (atributos numéricos, textuais)?
+- Que tipos de dados você tem, majoritariamente (atributos numéricos, textuais)? <br>
 O banco possui somente atributos númericos
-- Qual seu objetivo com esse dataset?
+- Qual seu objetivo com esse dataset? <br>
 O objetivo do dataset é identificar Phishing Websites
-- Seu dataset é rotulado de que maneira?
+- Seu dataset é rotulado de que maneira? <br>
 O dataset é rotulado de forma binária (1 (Legitimate Website) e -1 (Phishing Website))
-- Como é a distribuição dos dados do dataset?
+- Como é a distribuição dos dados do dataset? <br>
 Os resultados encontram-se no notebook (exploração.ipynb)
 - Quais colunas/atributos você julga ser interessante manter e remover? Por quê? <br>
 Cada atributo comporta-se como um classificador baseado em heurística, portanto mediu-se a acurácia, f1-score e coeficiente de Matthews para cada atributo para se decidir se mantém ou não o atributo (detalhes no exploração.ipynb) <br> 
