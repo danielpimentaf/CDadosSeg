@@ -1,4 +1,4 @@
-#Exploração de Dados
+# Exploração de Dados
 
 - Que tipos de dados você tem, majoritariamente (atributos numéricos, textuais)?
 - Qual seu objetivo com esse dataset?
