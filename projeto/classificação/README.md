@@ -1,4 +1,4 @@
-#Classificação
+# Classificação
 
 Nas pastas estão contidos os scripts de treinamento dos modelos para cada grupo de atributos. A seguir está listado o nome da pasta e seus grupos de atributos correspondentes:
 * 1_grupo_selec = Grupo 1 (Exploração de Dados) 
