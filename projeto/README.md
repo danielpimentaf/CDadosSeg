@@ -1,4 +1,8 @@
 # Projeto Final (Phishing Websites)
+## Relatório
+
+O arquivo "Relatório.pdf" contém o relatório das atividades realizadas no projeto
+
 ## Scripts
 Os testes foram realizados utilizando o Google Colab e os scripts salvos no formato .ipynb. Para reprodução dos experimentos é necessário alterar o campo que contém o path para o dataset.
 
