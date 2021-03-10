@@ -9,5 +9,5 @@ Nas pastas estão contidos os scripts de treinamento dos modelos para cada grupo
 * 6_grupo_l1 = Grupo 6 (L1)
 * 7_grupotree = Grupo 7 (Tree)
 * 8_soma = Grupo 8 (Soma)
-* 9_all = Grupo 9
+* 9_all = Grupo 9 <br>
 A pasta split contém a análise da divisão do dataset em treinamento e teste
