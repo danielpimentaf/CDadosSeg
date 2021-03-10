@@ -1,6 +1,6 @@
 # ci1030-ERE2-CienciaDeDados
 ## Scripts
-Os testes foram realizados utilizando o Google Colab e os scripts salvos no formato .ipynb. Para reprodução dos experimentos é necessário alterar o campo com o path para o dataset.
+Os testes foram realizados utilizando o Google Colab e os scripts salvos no formato .ipynb. Para reprodução dos experimentos é necessário alterar o campo que contém o path para o dataset.
 
 ## Dataset
 O dataset escolhido foi o Phishing Websites Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/phishing+websites#. O dataset encontra-se na pasta dataset <br>
