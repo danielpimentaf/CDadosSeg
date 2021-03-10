@@ -1,6 +1,9 @@
 # ci1030-ERE2-CienciaDeDados
+## Scripts
+Os testes foram realizados utilizando o Google Colab e os scripts salvos no formato .ipynb. Para reprodução dos experimentos é necessário alterar o campo com o path para o dataset.
 
-O dataset escolhido foi o Phishing Websites Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/phishing+websites# <br>
+## Dataset
+O dataset escolhido foi o Phishing Websites Data Set. Disponível em: https://archive.ics.uci.edu/ml/datasets/phishing+websites#. O dataset encontra-se na pasta dataset <br>
 O dataset contém os seguintes campos: 
 1. having_IP_Address 
 2. URL_Length   
