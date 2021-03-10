@@ -1,7 +1,7 @@
 # Exploração de Dados
 
 - Que tipos de dados você tem, majoritariamente (atributos numéricos, textuais)? <br>
-O banco possui somente atributos númericos
+O banco possui somente atributos categóricos
 - Qual seu objetivo com esse dataset? <br>
 O objetivo do dataset é identificar Phishing Websites
 - Seu dataset é rotulado de que maneira? <br>
