@@ -5,7 +5,7 @@ O arquivo "Relatório.pdf" contém o relatório das atividades realizadas no pro
 
 ## Apresentação
 
-O arquivo "Slides.pdf" contém o slides utilizados na apresentação
+O arquivo "Slides.pdf" contém o slides utilizados na apresentação <br>
 A apresentação está disponível em: 
 
 ## Scripts
